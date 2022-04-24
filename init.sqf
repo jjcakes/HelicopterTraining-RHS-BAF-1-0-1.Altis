@@ -16,6 +16,10 @@ else
 	skiptime (floor random 24);
 };
 
+// View distance
+vDistance = "ViewDistance" call BIS_fnc_getParamValue;
+setViewDistance vDistance;
+
 //LZ size
 //lzSize = paramsArray select 1;
 lzSize = "LZSize" call BIS_fnc_getParamValue;
