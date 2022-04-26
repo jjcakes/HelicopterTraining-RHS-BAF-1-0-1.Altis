@@ -14,7 +14,7 @@ tsk1 setSimpleTaskDescription ["Fly to and land at the next LZ", "Next LZ", "LZ"
 tsk1 setSimpleTaskDestination (getPos lzLoc);
 target setCurrentTask tsk1;
 
-trg = createTrigger["EmptyDetector",getPos lzLoc]; trg setTriggerArea[2000,300,0,false];
+trg = createTrigger["EmptyDetector",getPos lzLoc]; trg setTriggerArea[lzSize,lzSize,0,false];
 trg setTriggerActivation["WEST","PRESENT",false];
 trg setTriggerTimeout [2.5, 2.5, 2.5, true];
 trg setTriggerStatements["(vehicle target != target) && ((vehicle target) in thislist) && (isTouchingGround (vehicle target))", "null = [trg, tsk1, target, lzLoc, lzLocs] execVM 'landingComplete.sqf'", ""]; 
