@@ -8,6 +8,4 @@ deleteWaypoint [_group,1];
 {_x action["eject", vehicle _x]} forEach units _group;
 {unAssignVehicle _x} forEach units _group;
 
-{ deleteVehicle _x } foreach units _group;
-
 ferrying = false;
