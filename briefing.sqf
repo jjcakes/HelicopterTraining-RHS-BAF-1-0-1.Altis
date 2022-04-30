@@ -21,6 +21,9 @@ switch (side player) do
 		
 		player createDiaryRecord ["Diary", ["Refuelling", 
 		"There is a refuelling truck at the air field which you can use to refill your tank if you begin to run low."]];
+
+		player createDiaryRecord ["Diary", ["Rearming", 
+		"There is a rearming truck at the air field which you can use to refill your tank if you begin to run low."]];
 		
 		player createDiaryRecord ["Diary", ["Mission Objectives", 
 		"Select your chopper of choice and fly to the marked LZ. You'll be meeting up with fireteams who've requested EVAC and transporting them to other LZs. Watch out for enemy squads and anti-air troopers."]];
