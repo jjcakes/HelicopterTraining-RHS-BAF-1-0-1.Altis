@@ -19,6 +19,7 @@ else
 // View distance
 vDistance = "ViewDistance" call BIS_fnc_getParamValue;
 setViewDistance vDistance;
+setObjectViewDistance vDistance;
 
 //LZ size
 //lzSize = paramsArray select 1;
